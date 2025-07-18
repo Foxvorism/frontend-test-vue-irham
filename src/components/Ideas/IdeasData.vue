@@ -178,9 +178,10 @@ const changePage = (newPage) => {
       >
         <div class="w-full aspect-video rounded-t-lg bg-gray-200">
           <img
-            :src="idea.small_image[0]?.url"
+            :src="idea.small_image[0]?.url || '/img/logo-suitmedia-square.png'"
             alt="Ideas Thumbnail"
             class="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
         <div class="p-5">
